@@ -19,7 +19,7 @@ import java.util.Locale;
 @Configuration
 public class ConferenceConfig implements WebMvcConfigurer
 {
-//  @Override
+  //  @Override
   public void addResourceHandlers(ResourceHandlerRegistry registry)
   {
     registry.addResourceHandler("/files/**")
@@ -52,11 +52,11 @@ public class ConferenceConfig implements WebMvcConfigurer
   }
 
 
-//  @Bean
+  //  @Bean
   public ViewResolver viewResolver()
   {
     InternalResourceViewResolver resolver = new InternalResourceViewResolver();
-    resolver.setPrefix("/WB-INF/jsp/");
+    resolver.setPrefix("/WEB-INF/jsp/");
     resolver.setPrefix(".jsp");
     resolver.setOrder(0);
     return resolver;

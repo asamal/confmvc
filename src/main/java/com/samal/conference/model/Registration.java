@@ -1,10 +1,14 @@
 package com.samal.conference.model;
 
+import javax.validation.constraints.NotEmpty;
+
+
 /**
  * @author Aliaksandr Samal
  */
 public class Registration
 {
+  @NotEmpty
   private String name;
 
 
