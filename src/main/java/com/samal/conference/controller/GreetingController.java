@@ -15,6 +15,7 @@ public class GreetingController
   @GetMapping("greeting")
   public String greeting(Map<String, Object> model)
   {
+    // test Sonar commit
     model.put("message", "Hello Alexander!");
     return "greeting";
   }
